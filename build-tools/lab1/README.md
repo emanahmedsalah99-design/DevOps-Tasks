@@ -39,7 +39,7 @@ cd build1
 ```bash
 gradle test
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Run%20Unit%20Tests.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/Run%20Unit%20Tests.png?raw=true)
 ### Step 5: Build Application
 ```bash
 gradle build
