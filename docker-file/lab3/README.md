@@ -33,11 +33,11 @@ CMD ["java","-jar","target/demo-0.0.1-SNAPSHOT.jar"]
 docker build -t app1 .
 docker images
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
-### Step 1: Clone Application Code
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Build%20Docker%20Image.png?raw=true)
+### Step 4: Run Container from Image
 ```bash
-git clone https://github.com/Ibrahim-Adel15/Docker-1.git
-cd Docker-1
+docker run -d -p 8080:8080 --name container1 app1
+docker ps
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
 ### Step 1: Clone Application Code
