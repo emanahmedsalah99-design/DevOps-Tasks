@@ -45,7 +45,7 @@ gradle test
 gradle build
 ls build/libs
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Build%20Application.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/Build%20Application.png?raw=true)
 ### Step 6: Run Application
 ```bash
 java -jar build/libs/ivolve-app.jar
