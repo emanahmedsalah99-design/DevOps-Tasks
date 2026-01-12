@@ -43,8 +43,9 @@ docker ps
 ### Step 5: Test the Application
 ```bash
 http://localhost:8080
-
+curl http://localhost:8080
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Test%20the%20Application.png?raw=true)
 ![Repository Cloned]()
 ### Step 1: Clone Application Code
 ```bash
