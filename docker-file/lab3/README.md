@@ -27,11 +27,11 @@ RUN mvn package -DskipTests
 EXPOSE 8080
 CMD ["java","-jar","target/demo-0.0.1-SNAPSHOT.jar"]
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
-### Step 1: Clone Application Code
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Dockerfile.png?raw=true)
+### Step 3: Build Docker Image
 ```bash
-git clone https://github.com/Ibrahim-Adel15/Docker-1.git
-cd Docker-1
+docker build -t app1 .
+docker images
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
 ### Step 1: Clone Application Code
