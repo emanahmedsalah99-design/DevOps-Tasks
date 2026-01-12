@@ -21,7 +21,8 @@ Gradle and the application are Java-based, so Java is required to build and run 
 sudo dnf install java-21-openjdk-devel -y
 java -version
 ```
-![show image](lab1/install java.png)
+![Repository Cloned](blob:https://github.com/00cdfe49-9088-4205-b780-bac6c3edc52d)
+
 ### Step 2: Install Gradle
 ```bash
 sudo dnf install gradle -y
