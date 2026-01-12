@@ -21,11 +21,9 @@ Gradle and the application are Java-based, so Java is required to build and run 
 sudo dnf install java-21-openjdk-devel -y
 java -version
 ```
-ز
-
 ```md
 ![Installed Java](install_java.png)
-
+```
 
 
 
