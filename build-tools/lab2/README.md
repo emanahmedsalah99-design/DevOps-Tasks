@@ -21,7 +21,7 @@ mvn -version
 git clone https://github.com/Ibrahim-Adel15/build2.git
 cd build2
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Screen%20lab2/clone_repo.png.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab2/Screenshot/clone_repo.png.png?raw=true)
 ### Step 3: Run Unit Tests
 ```bash
 mvn test
