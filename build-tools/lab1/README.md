@@ -19,5 +19,7 @@ Gradle and the application are Java-based, so Java is required to build and run 
 ### Step 1: Install Java
 ```bash
 sudo dnf install java-21-openjdk-devel -y
+java -version
+`![Java Installed](install java.png)`
 
 
