@@ -15,24 +15,29 @@ Build and package a Java application using Maven, run unit tests, generate JAR f
 sudo dnf install maven -y
 mvn -version
 ```
+![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
 ### Step 2: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build2.git
 cd build2
 ```
+![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
 ### Step 3: Run Unit Tests
 ```bash
 mvn test
 ```
+![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
 ### Step 4: Build Application
 ```bash
 mvn package
 ls target/
 ```
+![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
 ### Step 5: Run Application
 ```bash
 java -jar target/hello-ivolve-1.0-SNAPSHOT.jar
 ```
+![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
 
 
 
