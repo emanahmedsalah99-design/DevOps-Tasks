@@ -28,15 +28,18 @@ java -version
 sudo dnf install gradle -y
 gradle -v
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/install%20java.png?raw=true)
 ### Step 3: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build1.git
 cd build1
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/install%20java.png?raw=true)
 ### Step 4: Run Unit Tests
 ```bash
 gradle test
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/install%20java.png?raw=true)
 ### Step 5: Build Application
 ```bash
 gradle build
