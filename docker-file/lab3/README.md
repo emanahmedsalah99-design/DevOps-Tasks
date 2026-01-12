@@ -43,16 +43,14 @@ docker ps
 ### Step 5: Test the Application
 ```bash
 http://localhost:8080
-curl http://localhost:8080
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Test%20the%20Application.png?raw=true)
-![Repository Cloned]()
-### Step 1: Clone Application Code
+
+### Step 6: Stop and Delete the Container
 ```bash
-git clone https://github.com/Ibrahim-Adel15/Docker-1.git
-cd Docker-1
+docker stop container1
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned]()
 ### Step 1: Clone Application Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/Docker-1.git
