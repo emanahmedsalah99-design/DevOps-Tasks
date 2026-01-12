@@ -20,15 +20,35 @@ Gradle and the application are Java-based, so Java is required to build and run 
 ```bash
 sudo dnf install java-21-openjdk-devel -y
 java -version
+```
 
 ### Step 2: Install Gradle
 ```bash
 sudo dnf install gradle -y
 gradle -v
+```
 ### Step 3: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build1.git
 cd build1
+```
+### Step 4: Run Unit Tests
+```bash
+gradle test
+```
+### Step 5: Build Application
+```bash
+gradle build
+ls build/libs
+```
+### Step 6: Run Application
+```bash
+java -jar build/libs/ivolve-app.jar
+```
+
+
+
+
 
 
 
