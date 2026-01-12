@@ -57,6 +57,7 @@ docker rm container1
 docker ps -a
 
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Delete%20the%20Container.png?raw=true)
 ![Repository Cloned]()
 ### St
 ```bash
