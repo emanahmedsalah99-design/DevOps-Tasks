@@ -28,7 +28,7 @@ java -version
 sudo dnf install gradle -y
 gradle -v
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/install%20gradle.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20gradle.png?raw=true)
 ### Step 3: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build1.git
