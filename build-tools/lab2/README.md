@@ -15,7 +15,7 @@ Build and package a Java application using Maven, run unit tests, generate JAR f
 sudo dnf install maven -y
 mvn -version
 ```
-![Repository Cloned](https://github.com/Ibrahim-Adel15/Lab2-Demo/blob/main/screenshots/clone.PNG))
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Screen%20lab2/maven-version.png.png?raw=true)
 ### Step 2: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build2.git
