@@ -34,7 +34,7 @@ gradle -v
 git clone https://github.com/Ibrahim-Adel15/build1.git
 cd build1
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/clone%20(java%20app).png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/clone%20(java%20app).png?raw=true)
 ### Step 4: Run Unit Tests
 ```bash
 gradle test
