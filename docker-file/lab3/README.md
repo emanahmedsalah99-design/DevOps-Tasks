@@ -55,15 +55,9 @@ docker stop container1
 ```bash
 docker rm container1
 docker ps -a
-
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Delete%20the%20Container.png?raw=true)
-![Repository Cloned]()
-### St
-```bash
-git clone https://github.com/Ibrahim-Adel15/Docker-1.git
-cd Docker-1
-```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Delete%20container.png?raw=true)
+
 
 
