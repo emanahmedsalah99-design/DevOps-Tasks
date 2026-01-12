@@ -27,6 +27,7 @@ java -version
 sudo dnf install gradle -y
 gradle -v
 ```
+[Show Image](install java.png)
 ### Step 3: Clone Source Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/build1.git
