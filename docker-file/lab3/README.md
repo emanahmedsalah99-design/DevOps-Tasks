@@ -39,13 +39,13 @@ docker images
 docker run -d -p 8080:8080 --name container1 app1
 docker ps
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
-### Step 1: Clone Application Code
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
+### Step 5: Test the Application
 ```bash
-git clone https://github.com/Ibrahim-Adel15/Docker-1.git
-cd Docker-1
+http://localhost:8080
+
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned]()
 ### Step 1: Clone Application Code
 ```bash
 git clone https://github.com/Ibrahim-Adel15/Docker-1.git
