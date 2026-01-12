@@ -26,7 +26,7 @@ cd build2
 ```bash
 mvn test
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Screen%20lab2/tests-success.png.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab2/Screenshot/tests-success.png.png?raw=true)
 ### Step 4: Build Application
 ```bash
 mvn package
