@@ -17,9 +17,8 @@ Build and run a Java Spring Boot application using Docker Multi-Stage Build.
 ```bash
 git clone https://github.com/Ibrahim-Adel15/Docker-1.git
 cd Docker-1
-ls
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/clone%20the%20app.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Clone%20App.png?raw=true)
 ### Step 2: Dockerfile (Multi-Stage)
 ```bash
 vim dockerfile
