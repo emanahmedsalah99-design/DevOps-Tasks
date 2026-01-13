@@ -3,7 +3,12 @@
 ## Objective
 Run a Java Spring Boot application inside a Docker container using Java 17.
 
----
+## Environment
+- Host OS: Red Hat Enterprise Linux 10
+- Host Java: 21
+- Container Java: 17
+- Maven
+- Docker
 
 ## Steps & Commands
 
