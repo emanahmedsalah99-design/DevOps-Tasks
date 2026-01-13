@@ -62,8 +62,8 @@ http://localhost:8089
 ```bash
 docker stop container2
 docker rm container2
-ps -a 
+docker ps -a 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Stop%20&%20Delete%20Container.png?raw=true)
 
 
