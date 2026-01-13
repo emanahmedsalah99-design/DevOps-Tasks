@@ -44,7 +44,7 @@ docker build -t app2 .
 ```bash
 docker images
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Image%20size.png?raw=true)
 ### Step 6: Run the Container
 ```bash
 docker run -d -p 8089:8080 --name container2 app2
