@@ -36,7 +36,7 @@ COPY --from=builder /build/target/demo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 CMD ["java","-jar","app.jar"]
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Build%20The%20App.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Dockerfile.png?raw=true)
 ### Step 4: Build Docker Image
 ```bash
 docker build -t app3 .
