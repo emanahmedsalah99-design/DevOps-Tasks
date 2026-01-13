@@ -41,7 +41,7 @@ CMD ["java","-jar","app.jar"]
 ```bash
 docker build -t app3 .
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Build%20Image.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Build%20Image.png?raw=true)
 ### Step 5: Check image size
 ```bash
 docker images
