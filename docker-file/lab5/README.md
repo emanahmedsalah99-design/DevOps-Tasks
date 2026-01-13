@@ -5,7 +5,9 @@
 Build and run a Java Spring Boot application using Docker Multi-Stage Build.
 
 ## Environment
-- Java 17
+- RHEL 10
+- Java 21 (host)
+- Java 17 (container)
 - Maven
 - Docker
 
