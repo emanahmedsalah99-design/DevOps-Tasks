@@ -37,29 +37,29 @@ EXPOSE 8080
 CMD ["java","-jar","app.jar"]
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Dockerfile.png?raw=true)
-### Step 4: Build Docker Image
+### Step 3: Build Docker Image
 ```bash
 docker build -t app3 .
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Build%20Image.png?raw=true)
-### Step 5: Check image size
+### Step 4: Check image size
 ```bash
 docker images
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Image%20size.png?raw=true)
-### Step 6: Run the Container
+### Step 5: Run the Container
 ```bash
 docker run -d -p 8090:8080 --name container3 app3
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Run%20Container.png?raw=true)
-### Step 7: Test the Application
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Run%20Container.png?raw=true)
+### Step 6: Test the Application
 ```bash
 curl http://localhost:8090
 http://localhost:8090
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Test%20App.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/T%20APP.png?raw=true)
-### Step 8: Stop and Delete Container
+### Step 7: Stop and Delete Container
 ```bash
 docker stop container3
 docker rm container3
