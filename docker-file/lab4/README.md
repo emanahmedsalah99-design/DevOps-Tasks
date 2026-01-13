@@ -5,7 +5,7 @@ Run a Java Spring Boot application inside a Docker container using Java 17.
 
 ---
 
-## Steps
+## Steps & Commands
 
 ### 1. Clone the Repository
 ```bash
