@@ -16,6 +16,7 @@ Run a Java Spring Boot application inside a Docker container using Java 17.
 ```bash
 git clone https://github.com/Ibrahim-Adel15/Docker-1.git
 cd Docker-1
+ls
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/clone%20the%20app.png?raw=true)
 ### Step 2: Build the Application
