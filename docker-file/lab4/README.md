@@ -34,7 +34,7 @@ EXPOSE 8080
 CMD ["java","-jar","app.jar"]
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab4/Screenshots/Docker%20File.png?raw=true)
 ### Step 4: Build Docker Image
 ```bash
 docker build -t app2 .
