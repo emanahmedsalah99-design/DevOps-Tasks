@@ -55,7 +55,7 @@ APP_REGION=us-west
 ```bash
 docker run -d --name container -p 8081:8080 --env-file env python-image
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Stop%20&%20Delete%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20container%20using%20the%20env%20file.png?raw=true)
 ### Step 8: Test the Container
 ```bash
 curl http://localhost:8081
