@@ -43,7 +43,7 @@ docker run -d --name container -p 8088:8080 -e APP_MODE=development -e APP_REGIO
 ```bash
 curl http://localhost:8088
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Run%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Test.png?raw=true)
 ### Step 6: Environment File Variables (Staging)
 ```bash
 vim env
