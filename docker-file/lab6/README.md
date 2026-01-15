@@ -55,7 +55,7 @@ APP_REGION=us-west
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
 ### Step 7: Run the container using the env file:
 ```bash
-docker run -d --name container -p 8081:8080 --env-file env python-image
+docker run -d --name container2 -p 8081:8080 --env-file env python-image
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20container%20using%20the%20env%20file.png?raw=true)
 ### Step 8: Test the Container
