@@ -41,7 +41,7 @@ docker run -d --name container1 -p 8088:8080 -e APP_MODE=development -e APP_REGI
 docker ps -a
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
-### Step 5: Test the Container
+### Step 5: Test the Container1
 ```bash
 curl http://localhost:8088
 ```
@@ -58,7 +58,7 @@ APP_REGION=us-west
 docker run -d --name container2 -p 8081:8080 --env-file env python-image
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20container%20using%20the%20env%20file.png?raw=true)
-### Step 8: Test the Container
+### Step 8: Test the Container2
 ```bash
 curl http://localhost:8081
 ```
@@ -84,9 +84,10 @@ docker build -t python-image2 -f Dockerfile.prod .
 ### Step 11: run the production container
 ```bash
 docker run -d --name container3 -p 8082:8080 python-image2
+docker ps -a
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/run%20production%20container.png?raw=true)
-### Step 12: Test the Container
+### Step 12: Test the Container3
 ```bash
 curl http://localhost:8082
 ```
