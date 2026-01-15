@@ -60,7 +60,7 @@ docker run -d --name container -p 8081:8080 --env-file env python-image
 ```bash
 curl http://localhost:8081
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Run%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Test(2).png?raw=true)
 ### Step 9: Dockerfile Variables (Production)
 ```bash
 vim Dockerfile.prod
