@@ -22,8 +22,8 @@ ls
 ### Step 2: Dockerfile 
 ```bash
 vim Dockerfile
-FROM python:3.10-slim
-WORKDIR /app
+FROM python:3.11-slim
+WORKDIR /lab6
 COPY . .
 RUN pip install flask
 EXPOSE 8080
