@@ -17,7 +17,7 @@ Understand how to manage environment variables in Docker containers using differ
 git clone https://github.com/Ibrahim-Adel15/Docker-3.git
 cd Docker-3
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Clone%20App.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Clone%20Application%20Code.png?raw=true)
 ### Step 2: Dockerfile (Multi-Stage)
 ```bash
 vim dockerfile
