@@ -50,7 +50,7 @@ vim env
 APP_MODE=staging
 APP_REGION=us-west
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Test.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
 ### Step 7: Run the container using the env file:
 ```bash
 docker run -d --name container -p 8081:8080 --env-file env python-image
