@@ -18,7 +18,7 @@ git clone https://github.com/Ibrahim-Adel15/Docker-3.git
 cd Docker-3
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Clone%20Application%20Code.png?raw=true)
-### Step 2: Dockerfile (Multi-Stage)
+### Step 2: Dockerfile 
 ```bash
 vim dockerfile
 FROM python:3.10-slim
