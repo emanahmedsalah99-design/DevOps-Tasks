@@ -21,7 +21,7 @@ ls
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Clone%20Application%20Code.png?raw=true)
 ### Step 2: Dockerfile 
 ```bash
-vim dockerfile
+vim Dockerfile
 FROM python:3.10-slim
 WORKDIR /app
 COPY . .
