@@ -88,7 +88,7 @@ docker run -d --name container3 -p 8082:8080 python-image2
 ```bash
 curl http://localhost:8082
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Run%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Test(3).png?raw=true)
 
 
 
