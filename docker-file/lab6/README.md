@@ -38,7 +38,7 @@ docker build -t python-image .
 ```bash
 docker run -d --name container -p 8088:8080 -e APP_MODE=development -e APP_REGION=us-east python-image
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Image%20size.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
 ### Step 5: Test the Container
 ```bash
 curl http://localhost:8088
