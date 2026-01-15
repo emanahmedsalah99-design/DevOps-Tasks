@@ -83,7 +83,7 @@ docker build -t python-image2 -f Dockerfile.prod .
 ```bash
 docker run -d --name container3 -p 8082:8080 python-image2
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Run%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/run%20production%20container.png?raw=true)
 ### Step 12: Test the Container
 ```bash
 curl http://localhost:8082
