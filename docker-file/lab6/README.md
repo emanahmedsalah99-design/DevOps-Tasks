@@ -28,7 +28,7 @@ RUN pip install flask
 EXPOSE 8080
 CMD ["python", "app.py"]
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab5/Screenshots/Dockerfile.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Dockerfile1.png?raw=true)
 ### Step 3: Build Docker Image
 ```bash
 docker build -t python-image .
