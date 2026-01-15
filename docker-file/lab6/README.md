@@ -37,7 +37,8 @@ docker build -t python-image .
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Build%20Image%20(python-image).png?raw=true)
 ### Step 4: Run Containers with Environment Variables
 ```bash
-docker run -d --name container -p 8088:8080 -e APP_MODE=development -e APP_REGION=us-east python-image
+docker run -d --name container1 -p 8088:8080 -e APP_MODE=development -e APP_REGION=us-east python-image
+docker ps -a
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
 ### Step 5: Test the Container
