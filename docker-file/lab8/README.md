@@ -1,1 +1,94 @@
+# Lab 8: Custom Docker Network for Microservices
 
+
+## Objective
+Understand how to create a custom Docker network and run Microservices (Frontend & Backend) on it, and verify communication between containers.
+
+## Environment
+- RHEL 10
+- Docker
+
+## Steps & Commands
+
+### Step 1: Clone the App
+```bash
+git clone https://github.com/Ibrahim-Adel15/Docker5.git
+cd Docker5
+ls
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/1-Docker%20Volume.png?raw=true)
+### Step 2: Frontend Dockerfile
+```bash
+cd Frontend
+vim Dockerfile
+
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 5000
+CMD ["python", "app.py"]
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/2-Bind%20Mount.png?raw=true)
+### Step 3: 
+```bash
+Build Frontend Image
+docker build -t frontend-image .
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/3-Run%20Nginx%20Container.png?raw=true)
+### Step 5: Backend Dockerfile
+```bash
+cd ../backend
+vim Dockerfile
+
+FROM python:3.11-slim
+WORKDIR /app
+RUN pip install flask
+COPY . .
+EXPOSE 5000
+CMD ["python", "app.py"]
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/4-index.html.png?raw=true)
+### Step 6: Build Backend Image
+```bash
+docker build -t backend-image .
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Logs.png?raw=true)
+### Step 7: Create Custom Docker Network
+```bash
+docker network create ivolve-network
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+### Step 8: Run Backend Container on Custom Network
+```bash
+docker run -d --name backend --network ivolve-network backend-image
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+### Step 8: Run Frontend Container (frontend1) on Custom Network
+```bash
+docker run -d --name frontend1 --network ivolve-network -p 5000:5000 frontend-image
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+### Step 9: Run Another Frontend Container (frontend2) on Default Network
+```bash
+docker run -d--name frontend2 -p 5001:5000 frontend-image
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+### Step 7: Verify Communication Between Containers
+```bash
+http://localhost:5000
+http://localhost:5001
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+### Step 7: Delete Custom Network (Cleanup)
+```bash
+docker stop frontend1 backend
+docker rm frontend1 backend
+docker network rm ivolve-network
+```
+## Conclusion
+- Containers connected to the same Docker network can communicate using service names, while containers on different     networks remain isolated
