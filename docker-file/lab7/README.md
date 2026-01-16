@@ -26,9 +26,8 @@ echo "hello from bind mount" > nginx-bind/html/nginx.html
 ### Step 3: Run Nginx Container with Volume and Bind Mount
 ```bash
 docker run -d --name nginx-lab7 -p 8080:80 --mount type=volume,source=nginx_logs,target=/var/log/nginx --mount type=bind,source=$(pwd)/nginx-bind/html,target=/usr/share/nginx/html nginx
-
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/3-Run%20Nginx%20Container.png?raw=true)
 ### Step 4: Verify Nginx Page from Local Machine
 ```bash
 curl http://localhost:8080
