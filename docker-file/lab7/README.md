@@ -16,11 +16,10 @@ Understand the difference between Docker Volumes and Bind Mounts by running an N
 docker volume create nginx_logs
 docker volume ls
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Clone%20Application%20Code.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/1-Docker%20Volume.png?raw=true)
 ### Step 2: Create Bind Mount Directory Structure
 ```bash
 mkdir -p nginx-bind/html
-
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Dockerfile1.png?raw=true)
 ### Step 3: Create Custom HTML File
