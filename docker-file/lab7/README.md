@@ -45,7 +45,7 @@ sudo ls /var/lib/docker/volumes/nginx_logs/_data
 ```bash
 docker rm -f nginx-lab7
 docker volume rm nginx_logs
-docker volume ls
+docker ps -a
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
 ## Conclusion
