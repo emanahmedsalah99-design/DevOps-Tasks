@@ -1,1 +1,66 @@
+# Lab 7 – Docker Volume and Bind Mount with Nginx
+
+
+## Objective
+Understand the difference between Docker Volumes and Bind Mounts by running an Nginx container, persisting logs using a volume, and serving a custom HTML page from the host machine using a bind mount.
+
+## Environment
+- RHEL 10
+- Nginx
+- Docker
+
+## Steps & Commands
+
+### Step 1: Create Docker Volume for Nginx Logs
+```bash
+docker volume create nginx_logs
+docker volume ls
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Clone%20Application%20Code.png?raw=true)
+### Step 2: Create Bind Mount Directory Structure
+```bash
+mkdir -p nginx-bind/html
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Dockerfile1.png?raw=true)
+### Step 3: Create Custom HTML File
+```bash
+echo "hello from bind mount" > nginx-bind/html/nginx.html
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Build%20Image%20(python-image).png?raw=true)
+### Step 4: Run Nginx Container with Volume and Bind Mount
+```bash
+docker run -d --name nginx-lab7 -p 8080:80 --mount type=volume,source=nginx_logs,target=/var/log/nginx --mount type=bind,source=$(pwd)/nginx-bind/html,target=/usr/share/nginx/html nginx
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
+### Step 5: Verify Nginx Page from Local Machine
+```bash
+curl http://localhost:8080
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Test.png?raw=true)
+### Step 6: Modify HTML File on Host
+```bash
+echo "hello after change" > nginx-bind/html/nginx.html
+curl http://localhost:8080
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+### Step 7: Verify Logs Stored in Docker Volume
+```bash
+cd /var/lib/docker/volumes/nginx_logs/_data
+ls
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+### Step 8: Cleanup
+```bash
+docker rm -f nginx-lab7
+docker volume rm nginx_logs
+docker volume ls
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+## Conclusion
+- Docker Volume is used to persist container data (Nginx logs).
+- Bind Mount allows the container to use files directly from the host.
+- Changes in bind-mounted files are reflected immediately inside the container.
 
