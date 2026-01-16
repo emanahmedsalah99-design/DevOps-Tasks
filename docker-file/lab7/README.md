@@ -52,7 +52,7 @@ docker rm -f nginx-lab7
 docker volume rm nginx_logs
 docker volume ls
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
 ## Conclusion
 - Docker Volume is used to persist container data (Nginx logs).
 - Bind Mount allows the container to use files directly from the host.
