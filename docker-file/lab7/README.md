@@ -39,7 +39,7 @@ curl http://localhost:8080
 echo "hello after change" > nginx-bind/html/nginx.html
 curl http://localhost:8080
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/4-index.html.png?raw=true)
 ### Step 6: Verify Logs Stored in Docker Volume
 ```bash
 sudo ls /var/lib/docker/volumes/nginx_logs/_data
