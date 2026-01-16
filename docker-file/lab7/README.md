@@ -45,7 +45,7 @@ curl http://localhost:8080
 cd /var/lib/docker/volumes/nginx_logs/_data
 ls
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Logs.png?raw=true)
 ### Step 7: Cleanup
 ```bash
 docker rm -f nginx-lab7
