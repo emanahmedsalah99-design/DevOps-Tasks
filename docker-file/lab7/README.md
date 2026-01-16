@@ -25,7 +25,7 @@ echo "hello from bind mount" > nginx-bind/html/nginx.html
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/2-Bind%20Mount.png?raw=true)
 ### Step 3: Run Nginx Container with Volume and Bind Mount
 ```bash
-docker run -d --name nginx-lab7 -p 8080:80 --mount type=volume,source=nginx_logs,target=/var/log/nginx --mount type=bind,source=$(pwd)/nginx-bind/html,target=/usr/share/nginx/html nginx
+docker run -d --name nginx-lab7 -p 8096:80 --mount type=volume,source=nginx_logs,target=/var/log/nginx --mount type=bind,source=$(pwd)/nginx-bind/html,target=/usr/share/nginx/html nginx
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/3-Run%20Nginx%20Container.png?raw=true)
 ### Step 4: Verify Nginx Page from Local Machine
@@ -37,7 +37,7 @@ curl http://localhost:8080
 ### Step 5: Modify HTML File on Host
 ```bash
 echo "hello after change" > nginx-bind/html/nginx.html
-curl http://localhost:8080
+curl http://localhost:8098
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/4-index.html.png?raw=true)
 ### Step 6: Verify Logs Stored in Docker Volume
