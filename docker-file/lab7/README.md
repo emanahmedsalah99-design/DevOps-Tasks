@@ -17,41 +17,37 @@ docker volume create nginx_logs
 docker volume ls
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/1-Docker%20Volume.png?raw=true)
-### Step 2: Create Bind Mount Directory Structure
+### Step 2: Create Bind Mount Directory 
 ```bash
 mkdir -p nginx-bind/html
-```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Dockerfile1.png?raw=true)
-### Step 3: Create Custom HTML File
-```bash
 echo "hello from bind mount" > nginx-bind/html/nginx.html
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Build%20Image%20(python-image).png?raw=true)
-### Step 4: Run Nginx Container with Volume and Bind Mount
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/2-Bind%20Mount.png?raw=true)
+### Step 3: Run Nginx Container with Volume and Bind Mount
 ```bash
 docker run -d --name nginx-lab7 -p 8080:80 --mount type=volume,source=nginx_logs,target=/var/log/nginx --mount type=bind,source=$(pwd)/nginx-bind/html,target=/usr/share/nginx/html nginx
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Run%20Containers%20with%20Environment%20Variables.png?raw=true)
-### Step 5: Verify Nginx Page from Local Machine
+### Step 4: Verify Nginx Page from Local Machine
 ```bash
 curl http://localhost:8080
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Test.png?raw=true)
-### Step 6: Modify HTML File on Host
+### Step 5: Modify HTML File on Host
 ```bash
 echo "hello after change" > nginx-bind/html/nginx.html
 curl http://localhost:8080
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
-### Step 7: Verify Logs Stored in Docker Volume
+### Step 6: Verify Logs Stored in Docker Volume
 ```bash
 cd /var/lib/docker/volumes/nginx_logs/_data
 ls
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
-### Step 8: Cleanup
+### Step 7: Cleanup
 ```bash
 docker rm -f nginx-lab7
 docker volume rm nginx_logs
