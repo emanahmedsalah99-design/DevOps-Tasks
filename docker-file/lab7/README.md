@@ -42,8 +42,8 @@ curl http://localhost:8080
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab6/Screenshots/Environment%20File%20Variables.png?raw=true)
 ### Step 6: Verify Logs Stored in Docker Volume
 ```bash
-cd /var/lib/docker/volumes/nginx_logs/_data
-ls
+sudo ls /var/lib/docker/volumes/nginx_logs/_data
+
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Logs.png?raw=true)
 ### Step 7: Cleanup
