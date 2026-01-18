@@ -31,7 +31,8 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/2-Bind%20Mount.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Frontend%20Dockerfile.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Frontend%20Dockerfile.png?raw=true)
 ### Step 3: 
 ```bash
 Build Frontend Image
