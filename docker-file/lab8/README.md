@@ -83,6 +83,7 @@ http://localhost:5000
 http://localhost:5001
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Verify%20Communication%20Between%20Containers.png?raw=true)
+
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Verify%20Communication%20Between%20Containers%20(2).png?raw=true)
 ### Step 7: Delete Custom Network (Cleanup)
 ```bash
@@ -90,5 +91,6 @@ docker stop frontend1 backend
 docker rm frontend1 backend
 docker network rm ivolve-network
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Delete%20Custom%20Network.png?raw=true)
 ## Conclusion
 - Containers connected to the same Docker network can communicate using service names, while containers on different     networks remain isolated
