@@ -82,7 +82,7 @@ docker run -d--name frontend2 -p 5001:5000 frontend-image
 http://localhost:5000
 http://localhost:5001
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Verify%20Communication%20Between%20Containers.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
 ### Step 7: Delete Custom Network (Cleanup)
 ```bash
