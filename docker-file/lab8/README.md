@@ -57,7 +57,7 @@ CMD ["python", "app.py"]
 ```bash
 docker build -t backend-image .
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Logs.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Build%20Backend%20Image.png?raw=true)
 ### Step 7: Create Custom Docker Network
 ```bash
 docker network create ivolve-network
