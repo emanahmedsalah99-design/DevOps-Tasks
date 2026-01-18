@@ -61,7 +61,7 @@ docker build -t backend-image .
 ```bash
 docker network create ivolve-network
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Create%20Custom%20Docker%20Network.png?raw=true)
 ### Step 8: Run Backend Container on Custom Network
 ```bash
 docker run -d --name backend --network ivolve-network backend-image
