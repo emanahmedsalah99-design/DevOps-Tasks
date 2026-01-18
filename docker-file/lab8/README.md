@@ -35,7 +35,6 @@ CMD ["python", "app.py"]
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/frontend%20Dockerfile%20(2).png?raw=true)
 ### Step 3: Build Frontend Image
 ```bash
-Build Frontend Image
 docker build -t frontend-image .
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Build%20Frontend%20Image.png?raw=true)
