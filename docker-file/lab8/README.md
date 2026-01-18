@@ -32,7 +32,7 @@ CMD ["python", "app.py"]
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Frontend%20Dockerfile.png?raw=true)
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Frontend%20Dockerfile.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/frontend%20Dockerfile%20(2).png?raw=true)
 ### Step 3: 
 ```bash
 Build Frontend Image
