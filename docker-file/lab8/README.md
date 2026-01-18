@@ -38,7 +38,7 @@ CMD ["python", "app.py"]
 Build Frontend Image
 docker build -t frontend-image .
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/3-Run%20Nginx%20Container.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Build%20Frontend%20Image.png?raw=true)
 ### Step 5: Backend Dockerfile
 ```bash
 cd ../backend
