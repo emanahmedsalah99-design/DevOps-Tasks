@@ -71,7 +71,7 @@ docker run -d --name backend --network ivolve-network backend-image
 ```bash
 docker run -d --name frontend1 --network ivolve-network -p 5000:5000 frontend-image
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Run%20Frontend%20Container%20(frontend1)%20on%20Custom%20Network.png?raw=true)
 ### Step 9: Run Another Frontend Container (frontend2) on Default Network
 ```bash
 docker run -d--name frontend2 -p 5001:5000 frontend-image
