@@ -66,7 +66,7 @@ docker network create ivolve-network
 ```bash
 docker run -d --name backend --network ivolve-network backend-image
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab7/Screenshots/Cleanup.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab8/Screenshots/Run%20Backend%20Container%20on%20Custom%20Network.png?raw=true)
 ### Step 8: Run Frontend Container (frontend1) on Custom Network
 ```bash
 docker run -d --name frontend1 --network ivolve-network -p 5000:5000 frontend-image
