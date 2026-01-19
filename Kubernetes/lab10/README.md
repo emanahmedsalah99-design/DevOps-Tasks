@@ -53,7 +53,7 @@ kubectl get nodes
 ```bash
 kubectl taint nodes minikube-m02 node=worker:NoSchedule
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Taint%20the%20Worker%20Node.png?raw=true)
 
 ### Step 3: Verify Taint
 ```bash
