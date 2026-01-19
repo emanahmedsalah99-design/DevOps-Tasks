@@ -42,7 +42,7 @@ kubectl get nodes
 minikube start --nodes 2
 kubectl get nodes
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Start%20Minikube%20with%202%20Nodes.png?raw=true)
 ### Step 1: Start Minikube with 2 Nodes
 ```bash
 minikube start --nodes 2
