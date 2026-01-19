@@ -20,7 +20,7 @@ Learn how to isolate Kubernetes nodes using taints and understand the `NoSchedul
   - effect: NoSchedule
 - Verify taint using `kubectl describe`
 
----
+
 
 ## Steps & commands
 
