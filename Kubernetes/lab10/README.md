@@ -29,5 +29,41 @@ Learn how to isolate Kubernetes nodes using taints and understand the `NoSchedul
 minikube start --nodes 2
 kubectl get nodes
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+### Step 1: Start Minikube with 2 Nodes
+```bash
+minikube start --nodes 2
+kubectl get nodes
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+
+### Step 1: Start Minikube with 2 Nodes
+```bash
+minikube start --nodes 2
+kubectl get nodes
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+### Step 1: Start Minikube with 2 Nodes
+```bash
+minikube start --nodes 2
+kubectl get nodes
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+### Step 2: Apply Taint to Worker Node
+```bash
+kubectl taint nodes minikube-m02 node=worker:NoSchedule
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+
+### Step 3: Verify Taint
+```bash
+kubectl describe node minikube-m02
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+
+
+
+
+
 
 
