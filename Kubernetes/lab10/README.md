@@ -3,14 +3,14 @@
 ## Objective
 Learn how to isolate Kubernetes nodes using taints and understand the `NoSchedule` effect.
 
----
+
 
 ## Environment
 - Kubernetes (Minikube)
 - kubectl
 - Minikube cluster with 2 nodes
 
----
+
 
 ## Lab Requirements
 - Run Kubernetes cluster with 2 nodes
@@ -60,6 +60,8 @@ kubectl taint nodes minikube-m02 node=worker:NoSchedule
 kubectl describe node minikube-m02
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Describe%20Nodes%20(Verify%20Taint).png?raw=true)
+## Conclusion
+- This lab demonstrates how to use Kubernetes taints to control pod placement and isolate nodes effectively.
 
 
 
