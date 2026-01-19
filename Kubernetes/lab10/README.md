@@ -59,7 +59,7 @@ kubectl taint nodes minikube-m02 node=worker:NoSchedule
 ```bash
 kubectl describe node minikube-m02
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Describe%20Nodes%20(Verify%20Taint).png?raw=true)
 
 
 
