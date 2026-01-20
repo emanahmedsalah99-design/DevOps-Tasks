@@ -5,10 +5,14 @@ Store MySQL non-sensitive data in a ConfigMap and sensitive data in a Secret, th
 
 ## Steps & Commands
 
-1. Generate ConfigMap YAML:
+### Step 1: ConfigMap
 ```bash
-kubectl create cm mysql-config -n ivolve \
-  --from-literal=DB_HOST=mysql-service \
-  --from-literal=DB_USER=ivolve_user \
-  --dry-run=client -o yaml > configmap.yaml
+kubectl create cm ivolve -n ivolve  --from-literal=DB_HOST=mysql-service  --from-literal=DB_USER=ivolve_user --dry-run=client -o yaml
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+### Step 2: Secret
+```bash
+kubectl create secret generic mysql-secret -n ivolve --from-literal=DB_PASSWORD=mypassword123   --from-literal=MYSQL_ROOT_PASSWORD=rootpassword456 --dry-run=client -o yaml 
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 
