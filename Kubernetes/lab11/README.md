@@ -33,5 +33,6 @@ kubectl run pod3 --image=nginx -n ivolve
 ## Conclusion
 - Namespace ivolve was created using YAML.
 - ResourceQuota successfully limits pods to only 2 inside the namespace.
+- The third pod will fail due to exceeding the ResourceQuota limit.
 
 
