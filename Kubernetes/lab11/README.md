@@ -9,9 +9,9 @@
 ## Step 1: Generate Namespace YAML (Dry-Run)
 
 ```bash
-kubectl create namespace ivolve --dry-run=client -o yaml > ivolve-namespace.yaml
+kubectl create ns ivolve --dry-run=client -o yaml > ivolve.yaml
 kubectl apply -f ivolve.yaml
-kubectl get namespace 
+kubectl get ns 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab11/Screenshots/Create%20NS%20from%20YAML.png?raw=true)
 ## Step 2: Generate ResourceQuota YAML
