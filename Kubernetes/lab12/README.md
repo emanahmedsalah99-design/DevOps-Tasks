@@ -15,4 +15,6 @@ kubectl create cm ivolve -n ivolve  --from-literal=DB_HOST=mysql-service  --from
 kubectl create secret generic mysql-secret -n ivolve --from-literal=DB_PASSWORD=mypassword123   --from-literal=MYSQL_ROOT_PASSWORD=rootpassword456 --dry-run=client -o yaml 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab12/Screenshots/Secret.png?raw=true)
+## Conclusion
+ConfigMaps handle non-sensitive data, Secrets handle sensitive data, and both can be used in Pods to enhance security and manageability.
 
