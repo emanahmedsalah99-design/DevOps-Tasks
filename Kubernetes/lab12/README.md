@@ -9,7 +9,7 @@ Store MySQL non-sensitive data in a ConfigMap and sensitive data in a Secret, th
 ```bash
 kubectl create cm ivolve -n ivolve  --from-literal=DB_HOST=mysql-service  --from-literal=DB_USER=ivolve_user --dry-run=client -o yaml
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab12/Screenshots/ConfigMap.png?raw=true)
 ### Step 2: Secret
 ```bash
 kubectl create secret generic mysql-secret -n ivolve --from-literal=DB_PASSWORD=mypassword123   --from-literal=MYSQL_ROOT_PASSWORD=rootpassword456 --dry-run=client -o yaml 
