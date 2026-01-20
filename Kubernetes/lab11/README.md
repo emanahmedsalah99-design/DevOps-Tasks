@@ -4,8 +4,8 @@
 - Create a Kubernetes namespace called `ivolve`.
 - Apply a ResourceQuota to limit the number of pods to only **2 pods** within the namespace.
 
+## Steps & commands
 ---
-
 ## Step 1: Generate Namespace YAML (Dry-Run)
 
 ```bash
