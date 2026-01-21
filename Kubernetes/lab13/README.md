@@ -54,7 +54,7 @@ spec:
   volumeName: app-logs-pv
   storageClassName: ""
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab13/Screenshots/pvc.yaml.png?raw=true)
 
 ### Step 4: Apply PV and PVC
 ```bash
