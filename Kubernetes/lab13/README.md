@@ -61,7 +61,7 @@ spec:
 kubectl apply -f pv.yaml
 kubectl apply -f pvc.yaml
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab13/Screenshots/Apply%20PV%20and%20PVC.png?raw=true)
 ### Step 5: Verify PV and PVC
 ```bash
 kubectl get pv
