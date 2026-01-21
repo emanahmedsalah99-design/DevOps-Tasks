@@ -1,14 +1,21 @@
-# Lab 13: Persistent Storage Setup for Application Logging
+# Lab 13 – Persistent Storage Setup for Application Logging
 
 ## Objective
 Configure persistent storage for application logs using Kubernetes PersistentVolume (PV) and PersistentVolumeClaim (PVC) on a Minikube cluster.
 
----
+## Environment
+- Minikube
+- kubectl
+- Linux 
+- YAML files for PV & PVC
 
 ## Steps & Commands
 
-### 1. Create project folder
+### Step 1: Prepare storage directory
 ```bash
-mkdir lab13
-cd lab13
+sudo mkdir -p /mnt/app-logs
+sudo chmod 777 /mnt/app-logs
+```
+
+
 
