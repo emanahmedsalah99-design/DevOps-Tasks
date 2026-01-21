@@ -16,7 +16,7 @@ Configure persistent storage for application logs using Kubernetes PersistentVol
 sudo mkdir -p /mnt/app-logs
 sudo chmod 777 /mnt/app-logs
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab13/Screenshots/Create%20directory%20on%20node.png?raw=true)
 ### Step 2: Create PV manifest
 ```bash
 vim pv.yaml
