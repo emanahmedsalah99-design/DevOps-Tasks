@@ -92,21 +92,7 @@ spec:
     - port: 3306
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Deploy%20MySQL%20with%20Service.png?raw=true)
-### 4. Create Secret for Database Passwords
-
-Create a file named `db-secret.yaml`:
-```
-apiVersion: v1
-kind: Secret
-metadata:
-  name: db-secret
-type: Opaque
-stringData:
-  MYSQL_ROOT_PASSWORD: root123
-  DB_PASSWORD: ivolve123
-```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Secret%20for%20Database%20Passwords.png?raw=true)
-### 5. Deploy Node.js App with Init Container
+### 4. Deploy Node.js App with Init Container
 
 Create a file named `app-deployment.yaml:`:
 ```
@@ -191,7 +177,7 @@ spec:
                   key: DB_PASSWORD
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Secret%20for%20Database%20Passwords.png?raw=true)
-### 6. Create Service for Node.js App
+### 5. Create Service for Node.js App
 
 Create a file named `node-app-service.yaml`:
 ```
@@ -219,14 +205,14 @@ kubectl apply -f node-app-service.yaml
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Apply.png?raw=true)
-### 6. Verify Deployment
+### 7. Verify Deployment
 ```
 kubectl get pods
 kubectl get svc
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Verify%20Deployment.png?raw=true)
-### 6. Access Node.js Application
+### 8. Access Node.js Application
 ```
 minikube service node-app-service
 ```
