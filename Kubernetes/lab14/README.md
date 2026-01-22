@@ -181,7 +181,7 @@ spec:
           requests:
             storage: 1Gi
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/StatefulSet.png?raw=true)
 
 
 ---
@@ -189,10 +189,10 @@ spec:
 ### 8. Apply All Manifests
 
 ```bash
-kubectl apply -f mysql-pv.yaml
-kubectl apply -f mysql-pvc.yaml
-kubectl apply -f mysql-service.yaml
-kubectl apply -f mysql-statefulset.yaml
+kubectl apply -f PV.yaml
+kubectl apply -f pvc.yaml
+kubectl apply -f service.yaml
+kubectl apply -f statefulset.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
