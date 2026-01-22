@@ -105,7 +105,7 @@ stringData:
   MYSQL_ROOT_PASSWORD: root123
   DB_PASSWORD: ivolve123
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Secret%20for%20Database%20Passwords.png?raw=true)
 ### 5. Deploy Node.js App with Init Container
 
 Create a file named `app-deployment.yaml:`:
