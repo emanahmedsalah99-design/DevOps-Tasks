@@ -194,7 +194,7 @@ kubectl apply -f pvc.yaml
 kubectl apply -f service.yaml
 kubectl apply -f statefulset.yaml
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Apply%20yaml.png?raw=true)
 
 ---
 
