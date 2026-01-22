@@ -63,6 +63,7 @@ kubectl describe node minikube-m02 | grep -i taints
 kubectl create secret generic mysql-secret \
   --from-literal=MYSQL_ROOT_PASSWORD=myrootpassword
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
