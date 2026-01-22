@@ -208,7 +208,7 @@ spec:
       targetPort: 3000
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Service%20for%20Node.js%20App.png?raw=true)
 ### 6. Apply
 ```
 kubectl apply -f db-secret.yaml
