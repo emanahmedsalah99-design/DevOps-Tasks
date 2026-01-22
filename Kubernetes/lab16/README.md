@@ -230,5 +230,5 @@ kubectl get svc
 ```
 minikube service node-app-service
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Access%20Node.js%20Application.png?raw=true)
 
