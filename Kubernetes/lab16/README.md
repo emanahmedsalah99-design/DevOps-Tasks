@@ -225,7 +225,7 @@ kubectl get pods
 kubectl get svc
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Verify%20Deployment.png?raw=true)
 ### 6. Access Node.js Application
 ```
 minikube service node-app-service
