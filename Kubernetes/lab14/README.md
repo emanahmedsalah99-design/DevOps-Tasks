@@ -53,7 +53,7 @@ Verify taint:
 ```bash
 kubectl describe node minikube-m02 | grep -i taints
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/verify%20taint.png?raw=true)
 
 ---
 
