@@ -102,21 +102,17 @@ spec:
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/app-deployment.yaml.png?raw=true)
-### 6. Apply Resources to Kubernetes
+### 3. Apply Resources to Kubernetes & Verify Deployment
 
 ```bash
 kubectl apply -f mysql-deployment.yaml
 kubectl apply -f app-deployment.yaml
-```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
-### 7. Verify Deployment
-
-```bash
 kubectl get pods
 kubectl get svc
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
-### 8. Access the Application
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/Apply%20k8.png?raw=true)
+
+### 4. Access the Application
 
 ```bash
 minikube service node-app-service
