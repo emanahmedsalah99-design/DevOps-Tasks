@@ -58,7 +58,7 @@ volumes:
 curl http://localhost:3000/health
 curl http://localhost:3000/ready
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/health,%20ready.png?raw=true)
 ### Step 4: Run Container from Image
 ```bash
 docker run -d -p 8080:8080 --name container1 app1
