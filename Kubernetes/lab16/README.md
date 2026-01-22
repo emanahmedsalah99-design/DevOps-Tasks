@@ -40,7 +40,7 @@ data:
   DB_NAME: ivolve
   DB_USER: ivolve_user
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/db-configmap.yaml.png?raw=true)
 ### 3. Deploy MySQL with Service
 
 Create a file named `mysql-deployment.yaml`:
