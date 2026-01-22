@@ -111,8 +111,14 @@ kubectl get pods
 kubectl get svc
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/Apply%20k8.png?raw=true)
+### 4. Verify Deployment
+```
+kubectl get pods
+kubectl get svc
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/Apply%20k8.png?raw=true)
 
-### 4. Access the Application
+### 5. Access the Application
 
 ```bash
 minikube service node-app-service
