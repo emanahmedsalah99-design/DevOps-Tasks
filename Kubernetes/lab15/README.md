@@ -117,5 +117,5 @@ kubectl get svc
 ```bash
 minikube service node-app-service
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
-If everything is configured correctly, the Node.js application will be accessible via the generated URL and connected to the MySQL database named `ivolve`.
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/Access%20the%20Application.png?raw=true)
+
