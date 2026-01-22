@@ -18,8 +18,7 @@ Deploy a containerized Node.js application connected to a MySQL database on a Ku
 ### 1. Create MySQL Deployment & MySQL Service
 
 Create a file named `mysql-deployment.yaml`:
-
-```yaml
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -44,8 +43,7 @@ spec:
               value: ivolve
           ports:
             - containerPort: 3306
-
-```yaml
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -55,14 +53,12 @@ spec:
     app: mysql
   ports:
     - port: 3306
+
 ```
-
-
 ### 4. Deploy Node.js Application (from DockerHub)
 
 Create a file named `app-deployment.yaml`:
-
-```yaml
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -79,7 +75,8 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: emanahmedsalah99/kubernets-app:1.0
+          image: emma175/kubernets-app:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
@@ -89,13 +86,7 @@ spec:
               value: root
             - name: DB_PASSWORD
               value: root123
-```
-
-### 5. Create Service for Node.js App
-
-Create a file named `node-app-service.yaml`:
-
-```yaml
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -107,15 +98,14 @@ spec:
   ports:
     - port: 3000
       targetPort: 3000
+
 ```
 
 ### 6. Apply Resources to Kubernetes
 
 ```bash
 kubectl apply -f mysql-deployment.yaml
-kubectl apply -f mysql-service.yaml
 kubectl apply -f app-deployment.yaml
-kubectl apply -f node-app-service.yaml
 ```
 
 ### 7. Verify Deployment
