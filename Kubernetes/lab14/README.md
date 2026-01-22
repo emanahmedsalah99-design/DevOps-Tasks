@@ -191,8 +191,8 @@ spec:
 ```bash
 kubectl apply -f PV.yaml
 kubectl apply -f pvc.yaml
-kubectl apply -f service.yaml
-kubectl apply -f statefulset.yaml
+kubectl apply -f Headless-service.yaml
+kubectl apply -f StatefulSet.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Apply%20yaml.png?raw=true)
 
@@ -213,12 +213,6 @@ kubectl get pv
 
 ```bash
 kubectl exec -it mysql-0 -- mysql -uroot -p
-```
-
-Expected output:
-
-```
-mysql>
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
