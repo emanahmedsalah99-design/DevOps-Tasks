@@ -52,7 +52,7 @@ services:
 volumes:
   db_data:
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/docker-compose.yml.png?raw=true)
 ### Step 3: Run Container from Image
 ```bash
 curl http://localhost:3000/health
