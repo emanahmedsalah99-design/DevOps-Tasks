@@ -56,7 +56,7 @@ spec:
 
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
-### 4. Deploy Node.js Application (from DockerHub)
+### 2. Deploy Node.js Application (from DockerHub)
 
 Create a file named `app-deployment.yaml`:
 ```
@@ -101,7 +101,7 @@ spec:
       targetPort: 3000
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/app-deployment.yaml.png?raw=true)
 ### 6. Apply Resources to Kubernetes
 
 ```bash
