@@ -130,7 +130,7 @@ spec:
     - port: 3306
       targetPort: 3306
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Headless%20Service.png?raw=true)
 
 ---
 
