@@ -93,7 +93,7 @@ sudo mkdir -p /mnt/data/mysql
 sudo chmod 777 /mnt/data/mysql
 exit
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/node%20permission.png?raw=true)
 
 ---
 
