@@ -55,6 +55,7 @@ spec:
     - port: 3306
 
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 ### 4. Deploy Node.js Application (from DockerHub)
 
 Create a file named `app-deployment.yaml`:
@@ -100,25 +101,25 @@ spec:
       targetPort: 3000
 
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 ### 6. Apply Resources to Kubernetes
 
 ```bash
 kubectl apply -f mysql-deployment.yaml
 kubectl apply -f app-deployment.yaml
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 ### 7. Verify Deployment
 
 ```bash
 kubectl get pods
 kubectl get svc
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 ### 8. Access the Application
 
 ```bash
 minikube service node-app-service
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 If everything is configured correctly, the Node.js application will be accessible via the generated URL and connected to the MySQL database named `ivolve`.
