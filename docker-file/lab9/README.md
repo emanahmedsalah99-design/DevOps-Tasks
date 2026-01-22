@@ -65,9 +65,8 @@ docker exec -it node_app sh
 ls /app/logs
 cat /app/logs/access.log
 exit
-
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/logs.png?raw=true)
 ### Step 5: Run Container from Image
 ```bash
 docker login
