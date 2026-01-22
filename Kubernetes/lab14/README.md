@@ -201,9 +201,7 @@ kubectl apply -f StatefulSet.yaml
 ### 9. Verify Resources
 
 ```bash
-kubectl get pods -l app=mysql
-kubectl get pvc
-kubectl get pv
+kubectl get pods -l app=mysql -w
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Pods.png?raw=true)
 
