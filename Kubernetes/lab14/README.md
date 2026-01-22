@@ -29,14 +29,14 @@ By the end of this lab, MySQL will be running with persistent storage and access
 ```bash
 minikube start --nodes=2 --driver=docker
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 
 Verify nodes:
 
 ```bash
 kubectl get nodes
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 ---
 
 ### 2. Taint Worker Node
@@ -46,12 +46,13 @@ Apply a taint to isolate one node:
 ```bash
 kubectl taint nodes minikube-m02 node=worker:NoSchedule
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 Verify taint:
 
 ```bash
 kubectl describe node minikube-m02 | grep -i taints
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
 
 ---
 
