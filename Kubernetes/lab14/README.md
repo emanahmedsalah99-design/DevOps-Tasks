@@ -36,7 +36,10 @@ Verify nodes:
 ```bash
 kubectl get nodes
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-
+tools/lab1/Screenshot/install%20java.png?raw=true)
+
 ---
 
 ### 2. Taint Worker Node
