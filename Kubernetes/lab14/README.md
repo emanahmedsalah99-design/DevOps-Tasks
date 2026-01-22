@@ -83,6 +83,7 @@ spec:
     path: /mnt/data/mysql
   persistentVolumeReclaimPolicy: Retain
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/pv.yaml.png?raw=true)
 
 Create directory on node:
 
@@ -92,6 +93,7 @@ sudo mkdir -p /mnt/data/mysql
 sudo chmod 777 /mnt/data/mysql
 exit
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
@@ -109,6 +111,7 @@ spec:
     requests:
       storage: 1Gi
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
@@ -127,6 +130,7 @@ spec:
     - port: 3306
       targetPort: 3306
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
@@ -177,6 +181,8 @@ spec:
           requests:
             storage: 1Gi
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+
 
 ---
 
@@ -188,6 +194,7 @@ kubectl apply -f mysql-pvc.yaml
 kubectl apply -f mysql-service.yaml
 kubectl apply -f mysql-statefulset.yaml
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
@@ -198,6 +205,7 @@ kubectl get pods -l app=mysql
 kubectl get pvc
 kubectl get pv
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
@@ -212,6 +220,7 @@ Expected output:
 ```
 mysql>
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
 
 ---
 
