@@ -20,7 +20,7 @@ cd kubernets-app
 ls
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/clone%20app.png?raw=true)
-### Step 2: Run Container from Image
+### Step 2: Docker Compose Setup
 ```bash
 vim docker-compose.yml
 version: "3.8"
@@ -53,16 +53,19 @@ volumes:
   db_data:
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/docker-compose.yml.png?raw=true)
-### Step 3: Run Container from Image
+### Step 3: Verify the Application
 ```bash
 curl http://localhost:3000/health
 curl http://localhost:3000/ready
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/health,%20ready.png?raw=true)
-### Step 4: Run Container from Image
+### Step 4: Logs
 ```bash
-docker run -d -p 8080:8080 --name container1 app1
-docker ps
+docker exec -it node_app sh
+ls /app/logs
+cat /app/logs/access.log
+exit
+
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
 ### Step 5: Run Container from Image
