@@ -214,7 +214,7 @@ kubectl get pv
 ```bash
 kubectl exec -it mysql-0 -- mysql -uroot -p
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/connection.png?raw=true)
 
 ---
 
@@ -222,7 +222,4 @@ kubectl exec -it mysql-0 -- mysql -uroot -p
 
 This lab demonstrates how Kubernetes StatefulSets manage stateful workloads using persistent storage, stable network identities, and controlled scheduling. MySQL is successfully deployed with persistent data, secure credentials, and node isolation.
 
----
-
-✅ Lab Completed Successfully
 
