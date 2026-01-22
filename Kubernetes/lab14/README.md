@@ -205,7 +205,7 @@ kubectl get pods -l app=mysql
 kubectl get pvc
 kubectl get pv
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Create%20secert.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Pods.png?raw=true)
 
 ---
 
