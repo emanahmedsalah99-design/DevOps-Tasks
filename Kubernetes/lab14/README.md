@@ -29,7 +29,7 @@ By the end of this lab, MySQL will be running with persistent storage and access
 ```bash
 minikube start --nodes=2 --driver=docker
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/build-tools/lab1/Screenshot/install%20java.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab14/Screenshots/Start%20Minikube%20with%20Multiple%20Nodes.png?raw=true)
 
 Verify nodes:
 
