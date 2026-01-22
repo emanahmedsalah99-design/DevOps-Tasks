@@ -53,13 +53,20 @@ volumes:
   db_data:
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/docker-compose.yml.png?raw=true)
-### Step 3: Verify the Application
+### Step 3: Run the Stack
+```bash
+docker compose up -d --build
+docker ps
+
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/Docker%20Compose.png?raw=true)
+### Step 4: Verify the Application
 ```bash
 curl http://localhost:3000/health
 curl http://localhost:3000/ready
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/health,%20ready.png?raw=true)
-### Step 4: Logs
+### Step 5: Logs
 ```bash
 docker exec -it node_app sh
 ls /app/logs
@@ -67,7 +74,7 @@ cat /app/logs/access.log
 exit
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/logs.png?raw=true)
-### Step 5: Run Container from Image
+### Step 6: Run Container from Image
 ```bash
 docker login
 docker build -t emma175/kubernets-app:1.0 .
