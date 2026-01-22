@@ -107,10 +107,8 @@ spec:
 ```bash
 kubectl apply -f mysql-deployment.yaml
 kubectl apply -f app-deployment.yaml
-kubectl get pods
-kubectl get svc
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/Apply%20k8.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/apply.png?raw=true)
 ### 4. Verify Deployment
 ```
 kubectl get pods
