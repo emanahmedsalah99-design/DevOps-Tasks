@@ -22,6 +22,8 @@ ls
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/clone%20app.png?raw=true)
 ### Step 2: Docker Compose Setup
 ```bash
+vim docker-compose.yml
+
 version: "3.8"
 
 services:
