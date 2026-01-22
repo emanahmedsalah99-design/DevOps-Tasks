@@ -218,7 +218,7 @@ kubectl apply -f app-deployment.yaml
 kubectl apply -f node-app-service.yaml
 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Apply.png?raw=true)
 ### 6. Verify Deployment
 ```
 kubectl get pods
