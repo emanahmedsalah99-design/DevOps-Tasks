@@ -26,7 +26,7 @@ stringData:
   MYSQL_ROOT_PASSWORD: root123
   DB_PASSWORD: ivolve123
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/db-secret.yaml.png?raw=true)
 ### 2. Create ConfigMap for Database Config
 
 Create a file named `db-configmap.yaml`:
