@@ -19,7 +19,7 @@ git clone https://github.com/Ibrahim-Adel15/kubernets-app.git
 cd kubernets-app
 ls
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab3/Screenshot/Run%20Container%20from%20Image.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/docker-file/lab9/Screenshots/clone%20app.png?raw=true)
 ### Step 2: Run Container from Image
 ```bash
 vim docker-compose.yml
