@@ -91,7 +91,7 @@ spec:
   ports:
     - port: 3306
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab16/Screenshots/Deploy%20MySQL%20with%20Service.png?raw=true)
 ### 4. Create Secret for Database Passwords
 
 Create a file named `db-secret.yaml`:
