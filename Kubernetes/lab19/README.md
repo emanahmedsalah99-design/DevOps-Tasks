@@ -18,7 +18,7 @@ kubectl create namespace monitoring
 ```
 ![Repository Cloned]()
 ### 2. Create Monitoring Namespace
-Create a file named 'node-exporter-daemonset.yaml':
+Create a file named `node-exporter-daemonset.yaml:
 ```bash
 kubectl create namespace monitoring
 ```
