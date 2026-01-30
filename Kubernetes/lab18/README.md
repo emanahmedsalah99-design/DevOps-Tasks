@@ -48,9 +48,8 @@ kubectl apply -f allow-app-to-mysql.yaml
 ```
 kubectl get networkpolicy
 kubectl describe networkpolicy allow-app-to-mysql
-
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab18/Screenshot/verify%20NetworkPolicy.png?raw=true)
 ### 4. Test Allowed Pod
 Create a pod with the allowed label:
 ```
