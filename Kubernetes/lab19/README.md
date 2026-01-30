@@ -65,6 +65,6 @@ kubectl get pods -n monitoring -o wide
 ```bash
 curl http://192.168.49.2:9100/metrics
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab19/Screenshots/Verify%20Metrics%20Exposure.png?raw=true)
 
 
