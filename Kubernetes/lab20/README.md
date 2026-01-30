@@ -24,7 +24,7 @@ kubectl create serviceaccount jenkins-sa -n ivolve
 ```bash
 kubectl get serviceaccount jenkins-sa -n ivolve
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Verify%20ServiceAccount.png?raw=true)
 ### Step 4: Create Secret for ServiceAccount Token
 Create file `jenkins-sa-secret.yaml`:
 ```bash
@@ -38,7 +38,7 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20a%20Secret%20for%20the%20ServiceAccount%20Token.png?raw=true)
-### Step 4: Create Role (pod-reader)
+### Step 5: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
 apiVersion: rbac.authorization.k8s.io/v1
@@ -52,7 +52,7 @@ rules:
   verbs: ["get", "list"]
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20Role%20(pod-reader).png?raw=true)
-### Step 5: Create RoleBinding
+### Step 6: Create RoleBinding
 Create file `pod-reader-binding.yaml`
 ```bash
 apiVersion: rbac.authorization.k8s.io/v1
@@ -70,7 +70,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20RoleBinding.png?raw=true)
-### Step 6: Validate Permissions
+### Step 7: Validate Permissions
 Check if ServiceAccount can list Pods
 ```bash
 kubectl auth can-i list pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
