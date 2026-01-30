@@ -59,7 +59,7 @@ kubectl apply -f node-exporter-daemonset.yaml
 ```bash
 kubectl get pods -n monitoring -o wide
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab19/Screenshots/Verify%20pod.png?raw=true)
 
 ### 5. Verify Metrics Exposure
 ```bash
