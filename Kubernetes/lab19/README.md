@@ -53,7 +53,7 @@ spec:
 kubectl apply -f node-exporter-daemonset.yaml
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab19/Screenshots/Apply%20DaemonSet.png?raw=true)
 
 ### 4. Verify Pods on Each Node
 ```bash
