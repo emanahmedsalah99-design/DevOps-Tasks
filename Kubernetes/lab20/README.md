@@ -76,7 +76,7 @@ Check forbidden action (example: delete pod)
 ```bash
 kubectl auth can-i delete pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Check%20forbidden%20action%20(example%20delete%20pod).png?raw=true)
 
 
 
