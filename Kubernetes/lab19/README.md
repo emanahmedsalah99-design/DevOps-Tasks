@@ -7,9 +7,8 @@
 - Verify that each node has a Pod running and that metrics are exposed on port 9100.
 
 ## Environment
-- Kubernetes Cluster (Minikube or any other cluster)
-- kubectl
-- curl
+- OS: Linux 
+- Kubernetes: Minikube
 
 ## Steps & Commands
 
