@@ -37,7 +37,8 @@ resources:
 kubectl get pods
 kubectl describe pod node-app-74c7c4665b-sxdnx 
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Taint%20the%20Worker%20Node.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab17/Screenshots/Verify%20Pod%20Creation%20and%20Resource%20Allocation.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab17/Screenshots/Verify%20Pod%20Creation%20and%20Resource%20Allocation.png?raw=true)
 ### Step 4: Monitor Pod Resource Usage
 ```bash
 kubectl top pod node-app-74c7c4665b-sxdnx 
