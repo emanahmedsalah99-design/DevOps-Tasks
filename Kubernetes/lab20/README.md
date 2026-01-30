@@ -103,5 +103,10 @@ kubectl auth can-i delete pods --as=system:serviceaccount:ivolve:jenkins-sa -n i
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Check%20forbidden%20action%20(example%20delete%20pod).png?raw=true)
 
+## Conclusion
+- The jenkins-sa ServiceAccount has read-only access to Pods in the ivolve namespace.
+- RBAC ensures the ServiceAccount cannot perform unauthorized actions such as deleting Pods.
+- This setup is commonly used for CI/CD tools like Jenkins to safely interact with Kubernetes.
+
 
 
