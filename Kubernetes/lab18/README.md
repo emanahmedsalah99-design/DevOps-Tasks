@@ -43,7 +43,7 @@ spec:
 ```
 kubectl apply -f allow-app-to-mysql.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab18/Screenshot/Apply%20NetworkPolicy.png?raw=true)
 ### 3. Verify NetworkPolicy
 ```
 kubectl get networkpolicy
