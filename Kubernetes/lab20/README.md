@@ -43,6 +43,11 @@ Apply the Secret
 kubectl apply -f jenkins-sa-secret.yaml
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Apply%20jenkins-sa-secret.png?raw=true)
+Retrieve the token
+```bash
+kubectl get secret jenkins-sa-token -n ivolve -o jsonpath='{.data.token}' | base64 --decode
+```
+![Repository Cloned]()
 ### Step 5: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
@@ -75,6 +80,11 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20RoleBinding.png?raw=true)
+Apply the Secret
+```bash
+kubectl apply -f jenkins-sa-secret.yaml
+```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Apply%20jenkins-sa-secret.png?raw=true)
 ### Step 7: Validate Permissions
 Check if ServiceAccount can list Pods
 ```bash
