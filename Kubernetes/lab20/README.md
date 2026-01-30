@@ -14,18 +14,17 @@ Learn how to secure Kubernetes access using RBAC (Role-Based Access Control) and
 ```bash
 kubectl create namespace ivolve
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 ### Step 2: Create ServiceAccount
 ```bash
 kubectl create serviceaccount jenkins-sa -n ivolve
 kubectl get serviceaccount jenkins-sa -n ivolve
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 ### Step 3: Create Secret for ServiceAccount Token
 Create file `jenkins-sa-secret.yaml`:
 ```bash
-
-```yaml
+yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -35,6 +34,7 @@ metadata:
     kubernetes.io/service-account.name: jenkins-sa
 type: kubernetes.io/service-account-token
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 ### Step 4: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
@@ -47,8 +47,8 @@ rules:
 - apiGroups: [""]
   resources: ["pods"]
   verbs: ["get", "list"]
-
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 ### Step 5: Create RoleBinding
 Create file `pod-reader-binding.yaml`
 ```bash
@@ -65,19 +65,19 @@ roleRef:
   kind: Role
   name: pod-reader
   apiGroup: rbac.authorization.k8s.io
-
-
 ```
-
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 ### Step 6: Validate Permissions
 Check if ServiceAccount can list Pods
 ```bash
 kubectl auth can-i list pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 Check forbidden action (example: delete pod)
 ```bash
 kubectl auth can-i delete pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab15/Screenshots/mysql-deployment.yaml.png?raw=true)
 
 
 
