@@ -46,7 +46,7 @@ spec:
           name: metrics
       hostNetwork: true
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab19/Screenshots/node-exporter-daemonset.yaml.png?raw=true)
 
 ### 3. Apply the DaemonSet
 ```bash
