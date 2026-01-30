@@ -30,7 +30,7 @@ resources:
     cpu: "2"
     memory: "2Gi"
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Taint%20the%20Worker%20Node.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab17/Screenshots/Edit%20the%20Node.js%20deployment%20to%20add%20resources%202.png?raw=true)
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Taint%20the%20Worker%20Node.png?raw=true)
 ### Step 3: Verify Pod Creation and Resource Allocation
 ```bash
