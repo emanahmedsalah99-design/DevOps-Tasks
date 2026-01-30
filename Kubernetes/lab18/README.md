@@ -38,6 +38,35 @@ spec:
         - protocol: TCP
           port: 3306
 ```
+### 2. Apply NetworkPolicy
+```
+kubectl apply -f allow-app-to-mysql.yaml
 
+```
+![Repository Cloned]()
+### 3. Verify NetworkPolicy
+```
+kubectl get networkpolicy
+kubectl describe networkpolicy allow-app-to-mysql
+
+```
+![Repository Cloned]()
+### 4. Test Allowed Pod
+Create a pod with the allowed label:
+```
+kubectl run allowed-test --image=mysql:5.7 --restart=Never --labels="app=node-app" -- sleep 3600
+kubectl exec -it allowed-test -- mysql -h mysql -uroot -p
+
+```
+![Repository Cloned]()
+### 5. Test Denied Pod
+Create a pod without the required label:
+```
+kubectl run denied-test --image=mysql:5.7 --restart=Never -- sleep 3600
+kubectl exec -it denied-test -- mysql -h mysql -uroot -p
+```
+![Repository Cloned]()
+## Conclusion
+This lab demonstrates how Kubernetes NetworkPolicy can be used to restrict pod-to-pod traffic and allow only authorized application pods to access MySQL services.
 
 
