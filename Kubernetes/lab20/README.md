@@ -47,7 +47,7 @@ rules:
   resources: ["pods"]
   verbs: ["get", "list"]
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20Role%20(pod-reader).png?raw=true)
 ### Step 5: Create RoleBinding
 Create file `pod-reader-binding.yaml`
 ```bash
