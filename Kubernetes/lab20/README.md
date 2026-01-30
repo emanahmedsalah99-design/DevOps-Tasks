@@ -66,7 +66,7 @@ Apply the Role:
 ```bash
 kubectl apply -f pod-reader-role.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Apply%20pod-reader-binding.yaml.png?raw=true)
 ### Step 6: Create RoleBinding
 Create file `pod-reader-binding.yaml`
 ```bash
