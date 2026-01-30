@@ -18,7 +18,6 @@ Learn how to control pod-to-pod communication in Kubernetes using NetworkPolicy 
 ### Step 1: Create NetworkPolicy
 Create a file named `allow-app-to-mysql.yaml`:
 ```bash
-vim allow-app-to-mysql.yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
