@@ -57,7 +57,7 @@ kubectl run allowed-test --image=mysql:5.7 --restart=Never --labels="app=node-ap
 kubectl exec -it allowed-test -- mysql -h mysql -uroot -p
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab18/Screenshot/Test%20Allowed%20Pod.png?raw=true)
 ### 5. Test Denied Pod
 Create a pod without the required label:
 ```
