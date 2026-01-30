@@ -71,7 +71,7 @@ Check if ServiceAccount can list Pods
 ```bash
 kubectl auth can-i list pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Check%20if%20ServiceAccount%20can%20list%20Pods.png?raw=true)
 Check forbidden action (example: delete pod)
 ```bash
 kubectl auth can-i delete pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
