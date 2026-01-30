@@ -17,7 +17,7 @@ kubectl get nodes
 kubectl config current-context
 kubectl get deployments
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab10/Screenshots/Taint%20the%20Worker%20Node.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab17/Screenshots/Verify%20Cluster%20and%20Deployment.png?raw=true)
 ### Step 2: Edit Deployment to Add Resource Requests and Limits
 ```bash
 kubectl edit deployment node-app
