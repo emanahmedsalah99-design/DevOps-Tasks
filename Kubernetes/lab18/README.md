@@ -64,7 +64,7 @@ Create a pod without the required label:
 kubectl run denied-test --image=mysql:5.7 --restart=Never -- sleep 3600
 kubectl exec -it denied-test -- mysql -h mysql -uroot -p
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab18/Screenshot/Test%20Denied%20Pod.png?raw=true)
 ## Conclusion
 This lab demonstrates how Kubernetes NetworkPolicy can be used to restrict pod-to-pod traffic and allow only authorized application pods to access MySQL services.
 
