@@ -38,6 +38,11 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20a%20Secret%20for%20the%20ServiceAccount%20Token.png?raw=true)
+Apply the Secret
+```bash
+kubectl apply -f jenkins-sa-secret.yaml
+```
+![Repository Cloned]()
 ### Step 5: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
