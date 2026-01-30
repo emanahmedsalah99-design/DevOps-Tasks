@@ -42,7 +42,7 @@ Apply the Secret
 ```bash
 kubectl apply -f jenkins-sa-secret.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Apply%20jenkins-sa-secret.png?raw=true)
 ### Step 5: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
