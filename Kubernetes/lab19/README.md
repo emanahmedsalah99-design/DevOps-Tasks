@@ -17,28 +17,53 @@
 kubectl create namespace monitoring
 ```
 ![Repository Cloned]()
-### 2. Create Monitoring Namespace
-Create a file named `node-exporter-daemonset.yaml:
+### 2. Create Node Exporter DaemonSet
+Create a file named `node-exporter-daemonset.yaml`:
 ```bash
-kubectl create namespace monitoring
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-exporter
+  namespace: monitoring
+  labels:
+    app: node-exporter
+spec:
+  selector:
+    matchLabels:
+      app: node-exporter
+  template:
+    metadata:
+      labels:
+        app: node-exporter
+    spec:
+      tolerations:
+      - operator: "Exists"  # Tolerate all existing taints
+      containers:
+      - name: node-exporter
+        image: prom/node-exporter:latest
+        ports:
+        - containerPort: 9100
+          name: metrics
+      hostNetwork: true
 ```
 ![Repository Cloned]()
 
-### 3. Create Monitoring Namespace
+### 3. Apply the DaemonSet
 ```bash
-kubectl create namespace monitoring
+kubectl apply -f node-exporter-daemonset.yaml
+
 ```
 ![Repository Cloned]()
 
-### 4. Create Monitoring Namespace
+### 4. Verify Pods on Each Node
 ```bash
-kubectl create namespace monitoring
+kubectl get pods -n monitoring -o wide
 ```
 ![Repository Cloned]()
 
-### 5. Create Monitoring Namespace
+### 5. Verify Metrics Exposure
 ```bash
-kubectl create namespace monitoring
+curl http://192.168.49.2:9100/metrics
 ```
 ![Repository Cloned]()
 
