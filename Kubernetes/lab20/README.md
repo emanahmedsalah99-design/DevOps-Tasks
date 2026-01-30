@@ -23,7 +23,6 @@ kubectl create serviceaccount jenkins-sa -n ivolve
 ### Step 3: Create Secret for ServiceAccount Token
 Create file `jenkins-sa-secret.yaml`:
 ```bash
-yaml
 apiVersion: v1
 kind: Secret
 metadata:
