@@ -20,7 +20,12 @@ kubectl create namespace ivolve
 kubectl create serviceaccount jenkins-sa -n ivolve
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20ServiceAccount.png?raw=true)
-### Step 3: Create Secret for ServiceAccount Token
+### Step 3: Verify ServiceAccount
+```bash
+kubectl get serviceaccount jenkins-sa -n ivolve
+```
+![Repository Cloned]()
+### Step 4: Create Secret for ServiceAccount Token
 Create file `jenkins-sa-secret.yaml`:
 ```bash
 apiVersion: v1
