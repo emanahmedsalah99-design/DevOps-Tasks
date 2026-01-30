@@ -86,6 +86,11 @@ roleRef:
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20RoleBinding.png?raw=true)
 
+Apply the RoleBinding
+```bash
+kubectl apply -f pod-reader-binding.yaml
+```
+![Repository Cloned]()
 ### Step 7: Validate Permissions
 Check if ServiceAccount can list Pods
 ```bash
