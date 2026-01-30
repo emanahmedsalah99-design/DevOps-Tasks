@@ -18,7 +18,6 @@ kubectl create namespace ivolve
 ### Step 2: Create ServiceAccount
 ```bash
 kubectl create serviceaccount jenkins-sa -n ivolve
-kubectl get serviceaccount jenkins-sa -n ivolve
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20ServiceAccount.png?raw=true)
 ### Step 3: Create Secret for ServiceAccount Token
@@ -34,7 +33,7 @@ metadata:
     kubernetes.io/service-account.name: jenkins-sa
 type: kubernetes.io/service-account-token
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20a%20Secret%20for%20the%20ServiceAccount%20Token.png?raw=true)
 ### Step 4: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
