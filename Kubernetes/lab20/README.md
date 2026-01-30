@@ -47,7 +47,7 @@ Retrieve the token
 ```bash
 kubectl get secret jenkins-sa-token -n ivolve -o jsonpath='{.data.token}' | base64 --decode
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Retrieve%20the%20token.png?raw=true)
 ### Step 5: Create Role (pod-reader)
 Create file `pod-reader-role.yaml`
 ```bash
