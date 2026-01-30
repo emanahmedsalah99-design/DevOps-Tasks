@@ -62,6 +62,11 @@ rules:
   verbs: ["get", "list"]
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20Role%20(pod-reader).png?raw=true)
+Apply the Role:
+```bash
+kubectl apply -f pod-reader-role.yaml
+```
+![Repository Cloned]()
 ### Step 6: Create RoleBinding
 Create file `pod-reader-binding.yaml`
 ```bash
@@ -80,11 +85,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Create%20RoleBinding.png?raw=true)
-Apply the Secret
-```bash
-kubectl apply -f jenkins-sa-secret.yaml
-```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab20/Screenshots/Apply%20jenkins-sa-secret.png?raw=true)
+
 ### Step 7: Validate Permissions
 Check if ServiceAccount can list Pods
 ```bash
