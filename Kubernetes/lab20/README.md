@@ -22,7 +22,7 @@ kubectl get serviceaccount jenkins-sa -n ivolve
 ```
 
 ### Step 3: Create Secret for ServiceAccount Token
-Create file jenkins-sa-secret.yaml:
+Create file `jenkins-sa-secret.yaml`:
 ```bash
 
 ```yaml
@@ -36,7 +36,7 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 ### Step 4: Create Role (pod-reader)
-Create file pod-reader-role.yaml
+Create file `pod-reader-role.yaml`
 ```bash
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -49,4 +49,35 @@ rules:
   verbs: ["get", "list"]
 
 ```
+### Step 5: Create RoleBinding
+Create file `pod-reader-binding.yaml`
+```bash
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pod-reader-binding
+  namespace: ivolve
+subjects:
+- kind: ServiceAccount
+  name: jenkins-sa
+  namespace: ivolve
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+
+
+```
+
+### Step 6: Validate Permissions
+Check if ServiceAccount can list Pods
+```bash
+kubectl auth can-i list pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
+```
+Check forbidden action (example: delete pod)
+```bash
+kubectl auth can-i delete pods --as=system:serviceaccount:ivolve:jenkins-sa -n ivolve
+```
+
+
 
