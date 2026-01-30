@@ -38,10 +38,10 @@ spec:
         - protocol: TCP
           port: 3306
 ```
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab18/Screenshot/NetworkPolicy%20YAML.png?raw=true)
 ### 2. Apply NetworkPolicy
 ```
 kubectl apply -f allow-app-to-mysql.yaml
-
 ```
 ![Repository Cloned]()
 ### 3. Verify NetworkPolicy
