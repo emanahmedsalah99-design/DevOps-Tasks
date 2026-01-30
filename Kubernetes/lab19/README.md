@@ -16,7 +16,7 @@
 ```bash
 kubectl create namespace monitoring
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Kubernetes/lab19/Screenshots/Namespace%20monitoring.png?raw=true)
 ### 2. Create Node Exporter DaemonSet
 Create a file named `node-exporter-daemonset.yaml`:
 ```bash
