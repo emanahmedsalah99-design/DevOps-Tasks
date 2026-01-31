@@ -24,7 +24,7 @@ openssl genrsa -out user2.key 2048
 openssl req -new -key user1.key -out user1.csr -subj "/CN=user1"
 openssl req -new -key user2.key -out user2.csr -subj "/CN=user2"
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Create%20Certificate%20Signing%20Requests.png?raw=true)
 ### Step 3: Sign Certificates Using Kubernetes CA
 ```bash
 openssl x509 -req -in user1.csr \
