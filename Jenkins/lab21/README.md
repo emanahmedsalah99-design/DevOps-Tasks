@@ -18,4 +18,107 @@
 openssl genrsa -out user1.key 2048
 openssl genrsa -out user2.key 2048
 ```
+![Repository Cloned]()
+### Step 2: Create Certificate Signing Requests (CSR)
+```bash
+openssl req -new -key user1.key -out user1.csr -subj "/CN=user1"
+openssl req -new -key user2.key -out user2.csr -subj "/CN=user2"
+```
+![Repository Cloned]()
+### Step 3: Sign Certificates Using Kubernetes CA
+```bash
+openssl x509 -req -in user1.csr \
+-CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out user1.crt -days 365
+
+openssl x509 -req -in user2.csr \
+-CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out user2.crt -days 365
+```
+![Repository Cloned]()
+
+### Step 4: Create kubeconfig Entries for Users
+```bash
+# user1
+kubectl config set-credentials user1 --client-certificate=user1.crt --client-key=user1.key
+
+# user2
+kubectl config set-credentials user2 --client-certificate=user2.crt --client-key=user2.key
+```
+![Repository Cloned]()
+
+### Step 5: Create Contexts
+```bash
+kubectl config set-context user1-context --cluster=kubernetes --user=user1
+kubectl config set-context user2-context --cluster=kubernetes --user=user2
+```
+![Repository Cloned]()
+
+### Step 6: Assign Admin Role to user1
+```bash
+kubectl create clusterrolebinding user1-admin-binding --clusterrole=cluster-admin --user=user1
+
+```
+![Repository Cloned]()
+
+### Step 7: Create Read-Only Role for user2
+Create file name`read-only-role.yaml`
+```bash
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: read-only
+  namespace: default
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps"]
+  verbs: ["get", "list", "watch"]
+
+```
+![Repository Cloned]()
+Apply the role
+```bash
+kubectl apply -f read-only-role.yaml
+```
+![Repository Cloned]()
+### Step 8: Bind Read-Only Role to user2
+Create file name`user2-rolebinding.yaml`
+```bash
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user2-read-only-binding
+  namespace: default
+subjects:
+- kind: User
+  name: user2
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: read-only
+  apiGroup: rbac.authorization.k8s.io
+
+```
+![Repository Cloned]()
+Apply the role binding:
+```bash
+kubectl apply -f user2-rolebinding.yaml
+```
+![Repository Cloned]()
+
+### Step 9: Validate Permissions
+```bash
+kubectl config use-context user1-context
+kubectl get pods
+kubectl delete pod <pod-name>  # ✅ Should work (admin access)
+
+```
+![Repository Cloned]()
+```bash
+kubectl config use-context user2-context
+kubectl get pods
+kubectl delete pod <pod-name>  # ❌ Should fail (read-only access)
+```
+![Repository Cloned]()
+
+
+
 
