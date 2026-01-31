@@ -50,7 +50,7 @@ kubectl config set-credentials user2 --client-certificate=user2.crt --client-key
 kubectl config set-context user1-context --cluster=kubernetes --user=user1
 kubectl config set-context user2-context --cluster=kubernetes --user=user2
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Create%20Contexts.png?raw=true)
 
 ### Step 6: Assign Admin Role to user1
 ```bash
