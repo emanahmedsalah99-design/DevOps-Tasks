@@ -33,7 +33,7 @@ openssl x509 -req -in user1.csr \
 openssl x509 -req -in user2.csr \
 -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out user2.crt -days 365
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Sign%20Certificates%20Using%20Kubernetes.png?raw=true)
 
 ### Step 4: Create kubeconfig Entries for Users
 ```bash
