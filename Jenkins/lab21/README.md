@@ -116,7 +116,7 @@ kubectl config use-context user2-context
 kubectl get pods
 kubectl delete pod <pod-name>  # ❌ Should fail (read-only access)
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Switch%20to%20user2%20(Read-Only).png?raw=true)
 
 
 
