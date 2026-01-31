@@ -72,7 +72,7 @@ rules:
   resources: ["pods", "services", "configmaps"]
   verbs: ["get", "list", "watch"]
 ```
-![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Bind%20Read-Only%20Role%20to%20user2.png?raw=true)
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Create%20Read-Only%20Role%20for%20user2.png?raw=true)
 Apply the role
 ```bash
 kubectl apply -f read-only-role.yaml
