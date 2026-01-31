@@ -78,7 +78,7 @@ Apply the role
 ```bash
 kubectl apply -f read-only-role.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Bind%20Read-Only%20Role%20to%20user2.png?raw=true)
 ### Step 8: Bind Read-Only Role to user2
 Create file name`user2-rolebinding.yaml`
 ```bash
