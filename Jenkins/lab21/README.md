@@ -18,7 +18,7 @@
 openssl genrsa -out user1.key 2048
 openssl genrsa -out user2.key 2048
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Create%20Private%20Keys%20for%20Users.png?raw=true)
 ### Step 2: Create Certificate Signing Requests (CSR)
 ```bash
 openssl req -new -key user1.key -out user1.csr -subj "/CN=user1"
