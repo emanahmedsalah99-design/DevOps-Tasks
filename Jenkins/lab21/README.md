@@ -101,7 +101,7 @@ Apply the role binding:
 ```bash
 kubectl apply -f user2-rolebinding.yaml
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Apply%20Read-Only%20Role.png?raw=true)
 
 ### Step 9: Validate Permissions
 ```bash
