@@ -57,7 +57,7 @@ kubectl config set-context user2-context --cluster=kubernetes --user=user2
 kubectl create clusterrolebinding user1-admin-binding --clusterrole=cluster-admin --user=user1
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Assign%20Admin%20Role%20to%20user1.png?raw=true)
 
 ### Step 7: Create Read-Only Role for user2
 Create file name`read-only-role.yaml`
