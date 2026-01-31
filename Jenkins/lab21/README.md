@@ -110,7 +110,7 @@ kubectl get pods
 kubectl delete pod <pod-name>  # ✅ Should work (admin access)
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Validate%20Permissions.png?raw=true)
 ```bash
 kubectl config use-context user2-context
 kubectl get pods
