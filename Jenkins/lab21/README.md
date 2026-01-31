@@ -43,7 +43,7 @@ kubectl config set-credentials user1 --client-certificate=user1.crt --client-key
 # user2
 kubectl config set-credentials user2 --client-certificate=user2.crt --client-key=user2.key
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Create%20kubeconfig%20Entries%20for%20Users.png?raw=true)
 
 ### Step 5: Create Contexts
 ```bash
