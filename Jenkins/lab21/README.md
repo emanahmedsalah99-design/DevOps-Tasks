@@ -97,7 +97,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Jenkins/lab21/Screenshots/Bind%20Read-Only%20Role%20to%20user2.png?raw=true)
 Apply the role binding:
 ```bash
 kubectl apply -f user2-rolebinding.yaml
