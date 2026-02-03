@@ -55,5 +55,5 @@ ansible managed -m ping
 ```bash
 ansible managed -a "df -h"
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Run%20Ad-Hoc%20Command%20(Check%20Disk%20Space).png?raw=true)
 
