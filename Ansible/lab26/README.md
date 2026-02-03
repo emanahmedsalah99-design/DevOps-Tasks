@@ -45,7 +45,7 @@ Add:
 [managed]
 node1 ansible_host=192.168.100.27 ansible_user=ememty
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Add.png?raw=true)
 ### 5. Test Connection
 ```bash
 ansible managed -m ping
