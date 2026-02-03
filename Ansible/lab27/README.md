@@ -72,7 +72,7 @@ nano ~/ansible_playbooks/webserver.yml
         enabled: yes
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Write%20Playbook%20File.png?raw=true)
 ### 3. Run the Playbook
 ```bash
 ansible-playbook ~/ansible_playbooks/webserver.yml
