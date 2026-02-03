@@ -83,7 +83,7 @@ ansible-playbook ~/ansible_playbooks/webserver.yml
 ```bash
 curl http://192.168.100.27:8080
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Screenshot%202026-02-03%20170525.png?raw=true)
 ![Repository Cloned]()
 ## Conclusion
 -Nginx installed and running on managed node
