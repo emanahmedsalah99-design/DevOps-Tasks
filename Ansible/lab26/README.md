@@ -60,11 +60,10 @@ ansible managed -a "df -h"
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Run%20Ad-Hoc%20Command%20(Check%20Disk%20Space).png?raw=true)
 
 ## Conclusion
-```
-Ansible installed and verified
-Passwordless SSH to managed node established
-Inventory configured and connection tested
-Ad-hoc command executed successfully ✅
+- Ansible installed and verified
+- Passwordless SSH to managed node established
+- Inventory configured and connection tested
+- Ad-hoc command executed successfully ✅
 ---
 
 
