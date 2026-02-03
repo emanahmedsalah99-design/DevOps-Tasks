@@ -35,6 +35,8 @@ ssh-copy-id ememty@192.168.100.27
 ssh ememty@192.168.100.27   # Test login
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Copy%20Public%20Key%20to%20Managed%20Node.png?raw=true)
+
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/%23%20Test%20login.png?raw=true)
 ### 4. Create Inventory
 ```bash
 sudo nano /etc/ansible/hosts
