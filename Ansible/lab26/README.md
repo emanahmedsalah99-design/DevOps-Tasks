@@ -19,12 +19,41 @@
 
 ### 1. Install Ansible
 ```bash
-sudo dnf clean all
-sudo dnf makecache
 sudo dnf install ansible-core -y
 ansible --version
-``` 
-### 1. Install Ansible
+```
+![Repository Cloned]()
+### 2. Generate SSH Key
 ```bash
-Generate SSH Key
-``` 
+ssh-keygen
+# Press Enter for all prompts
+```
+![Repository Cloned]()
+### 3. Copy Public Key to Managed Node
+```bash
+ssh-copy-id ememty@192.168.100.27
+ssh ememty@192.168.100.27   # Test login
+```
+![Repository Cloned]()
+### 4. Create Inventory
+```bash
+sudo nano /etc/ansible/hosts
+```
+
+Add:
+```bash
+[managed]
+node1 ansible_host=192.168.100.27 ansible_user=ememty
+```
+![Repository Cloned]()
+### 5. Test Connection
+```bash
+ansible managed -m ping
+```
+![Repository Cloned]()
+### 6. Run Ad-Hoc Command (Check Disk Space)
+```bash
+ansible managed -a "df -h"
+```
+![Repository Cloned]()
+
