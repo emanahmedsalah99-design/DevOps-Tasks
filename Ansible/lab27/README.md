@@ -78,11 +78,12 @@ nano ~/ansible_playbooks/webserver.yml
 ansible-playbook ~/ansible_playbooks/webserver.yml
 
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Run%20the%20Playbook.png?raw=true)
 ### 4. Verify
 ```bash
 curl http://192.168.100.27:8080
 ```
+![Repository Cloned]()
 ![Repository Cloned]()
 ## Conclusion
 -Nginx installed and running on managed node
