@@ -50,7 +50,7 @@ node1 ansible_host=192.168.100.27 ansible_user=ememty
 ```bash
 ansible managed -m ping
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Test%20Connection.png?raw=true)
 ### 6. Run Ad-Hoc Command (Check Disk Space)
 ```bash
 ansible managed -a "df -h"
