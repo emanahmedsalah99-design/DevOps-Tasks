@@ -28,7 +28,7 @@ ansible --version
 ssh-keygen
 # Press Enter for all prompts
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Generate%20SSH%20Key.png?raw=true)
 ### 3. Copy Public Key to Managed Node
 ```bash
 ssh-copy-id ememty@192.168.100.27
