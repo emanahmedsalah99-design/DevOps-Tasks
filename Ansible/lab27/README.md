@@ -76,7 +76,6 @@ nano ~/ansible_playbooks/webserver.yml
 ### 3. Run the Playbook
 ```bash
 ansible-playbook ~/ansible_playbooks/webserver.yml
-
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Run%20the%20Playbook.png?raw=true)
 ### 4. Verify
@@ -84,7 +83,7 @@ ansible-playbook ~/ansible_playbooks/webserver.yml
 curl http://192.168.100.27:8080
 ```
 ![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Screenshot%202026-02-03%20170525.png?raw=true)
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Screenshot%202026-02-03%20170439.png?raw=true)
 ## Conclusion
 -Nginx installed and running on managed node
 -Custom web page deployed on port 8080
