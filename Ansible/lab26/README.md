@@ -22,7 +22,7 @@
 sudo dnf install ansible-core -y
 ansible --version
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab26/Screenshots/Install%20Ansible.png?raw=true)
 ### 2. Generate SSH Key
 ```bash
 ssh-keygen
