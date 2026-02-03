@@ -14,7 +14,7 @@ Automate the installation and configuration of a web server using Ansible
 mkdir -p ~/ansible_playbooks
 cd ~/ansible_playbooks
 ```
-![Repository Cloned]()
+![Repository Cloned](https://github.com/emanahmedsalah99-design/DevOps-Tasks/blob/main/Ansible/lab27/Screenshots/Create%20Playbook%20Directory.png?raw=true)
 ### 2. Write Playbook File
 ```bash
 nano ~/ansible_playbooks/webserver.yml
